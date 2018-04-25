@@ -3,7 +3,7 @@ title: Netlify Swag - for the docs
 layout: layouts/base.njk
 ---
 
-# Swag
+# Deploy all the docs!
 
 Docs make the (tech) world go ‘round! Whether you call yourself a documentarian, a documentation engineer, a technical writer, or something else entirely, we can’t help but admire the amazing work you do.
 
