@@ -4,6 +4,14 @@
   publish = "dist"
   NODE_ENV = "8.9.0"
 
-redirects = [
-  {from = "/testers", to = "/", status = 301, force = false},
-  {from = "/docs", to = "/", status = 301, force = false}]
+[[redirects]]
+from = "/docs"
+to = "/"
+status = 301
+force = false
+
+[[redirects]]
+from = "/testers"
+to = "/"
+status = 301
+force = false
