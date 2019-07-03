@@ -35,7 +35,7 @@ We’d love to send you some stickers to celebrate your work. Fill out the form 
     <input type="email" name="email" id="email">
   </p>
   <p>
-    <label for="comments">Anything you’d like to share about the projects you’re working on or why you chose Netlify for docs?<small>(optional)</small></label>
+    <label for="comments">Anything you’d like to share about the projects you’re working on or why you chose Netlify?<small>(optional)</small></label>
     <textarea name="comments" id="comments"></textarea>
   </p>
   <p>
