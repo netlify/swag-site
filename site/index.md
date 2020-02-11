@@ -3,61 +3,39 @@ title: Netlify Swag
 layout: layouts/base.njk
 ---
 
-# Netlify stickers!
+# A new Netlify swag store is coming!
 
-Want to show the world your love for Netlify?
+A brand new swag store for Netlify is in the works.
 
-Enter your mailing address and why you love Netlify for a chance to receive a free sticker pack. We send out dozens each month!
+We might be a little biased, but — in our humble opinion — it’s probably going to be the greatest swag store ever created.
 
-We love to see tweets of the stickers in action when you mention <a href="https://twitter.com/netlify" target="_blank">@netlify</a>!
+## Want to get notified when the new store goes live?
 
-<form name="swag-for-all" netlify-honeypot="full-name" action="/thanks" netlify>
-  <p class="honey">
-    <label>Your full name: <input name="full-name"></label>
-    <input type="hidden" name="tab" id="tab" value="1">
+Enter your email below and we’ll let you know when the new store is live! There might even be a little somethin’ somethin’ in it for you, _nudge nudge wink wink_.
+
+<form
+  name="store-launch-notify-list"
+  method="POST"
+  netlify-honeypot="bot-field"
+  data-netlify="true"
+>  
+  <p>
+    <label>
+      First Name
+      <input type="text" name="fname" />
+    </label>
   </p>
   <p>
-    <label for="name">Name</label>
-    <input type="text" name="name" id="name">
+    <label>
+      Email Address
+      <input type="text" name="email" />
+    </label>
   </p>
+  <label class="honey">
+    Don’t fill this out if you're human:
+    <input name="bot-field" />
+  </label>
   <p>
-    <label for="addressline1">Address line 1</label>
-    <textarea name="addressline1" id="addressline1"></textarea>
-  </p>
-  <p>
-    <label for="addressline2">Address line 2 (optional)</label>
-    <textarea name="addressline2" id="addressline2"></textarea>
-  </p>
-  <p>
-    <label for="aptnumber">Apt / Suite number (optional)</label>
-    <textarea name="aptnumber" id="aptnumber"></textarea>
-  </p>
-  <p>
-    <label for="zip">Zip / Postal code</label>
-    <input type="text" name="zip" id="zip">
-  </p>
-  <p>
-    <label for="city">City</label>
-    <input type="text" name="city" id="city">
-  </p>
-  <p>
-    <label for="state">State, county or region</label>
-    <input type="text" name="state" id="state">
-  </p>
-  <p>
-    <label for="country">Country</label>
-    <input type="text" name="country" id="country">
-  </p>
-  <p>
-    <label for="email">Your email<small>(optional)</small></label>
-    <input type="email" name="email" id="email">
-  </p>
-  <p>
-    <label for="comments">Anything you’d like to share about the projects you’re working on or why you chose Netlify?<small>(optional)</small></label>
-    <textarea name="comments" id="comments"></textarea>
-  </p>
-  <p>
-    <button type="submit" class="button">Request your swag</button>
+    <button type="submit" class="button">Submit</button>
   </p>
 </form>
-

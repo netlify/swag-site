@@ -20,3 +20,6 @@ from = "/testers"
 to = "/"
 status = 301
 force = false
+
+[[plugins]]
+  package = "netlify-plugin-pastel"

@@ -6,33 +6,23 @@
   "license": "MIT",
   "scripts": {
     "start": "yarn run build && yarn run serve",
-    "build": "gulp build && yarn run build:functions",
-    "build:functions": "netlify-lambda build lambda",
-    "serve": "gulp watch & gulp serve & netlify-lambda serve lambda"
-  },
-  "proxy": {
-    "/.netlify/functions": {
-      "target": "http://localhost:9000",
-      "pathRewrite": {
-        "^/\\.netlify/functions": ""
-      }
-    }
+    "build": "gulp build",
+    "serve": "gulp watch & gulp serve"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/philhawksworth/eleventyone"
+    "url": "https://github.com/netlify/swag-site"
   },
   "dependencies": {
     "@11ty/eleventy": "^0.3.0",
     "dotenv": "^5.0.1",
-    "google-spreadsheet": "^2.0.4",
     "googleapis": "^29.0.0",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.4.0",
     "gulp-sass": "^3.1.0",
     "gulp-serve": "^1.4.0",
     "gulp-shell": "^0.6.5",
-    "netlify-lambda": "^0.4.0",
+    "netlify-plugin-pastel": "^0.0.1",
     "run-sequence": "^2.2.1"
   }
 }
