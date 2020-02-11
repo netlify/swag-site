@@ -10,7 +10,7 @@ We’ve got your info, and we’ll send you an update as soon as the new swag st
 
 ## While you wait
 
-Questions or thoughts in the meantime? Get in touch with us on [Twitter](https://twitter.com/netlify), ask us questions on [ask.netlify.com](https://ask.netlify.com), or learn something new on the [Netlify blog](https://www.netlify.com/blog/).
+Questions or thoughts in the meantime? Get in touch with us on [Twitter](https://twitter.com/netlify), ask us questions on [community.netlify.com](https://community.netlify.com), or learn something new on the [Netlify blog](https://www.netlify.com/blog/).
 
 
 
