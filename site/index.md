@@ -18,15 +18,15 @@ Enter your email below and we’ll let you know when the new store is live! Ther
   data-netlify="true"
 >  
   <p>
-    <label>
+    <label for="name">
       First Name
-      <input type="text" name="fname" />
+      <input type="text" name="fname" id="name" />
     </label>
   </p>
   <p>
-    <label>
+    <label for="email">
       Email Address
-      <input type="text" name="email" />
+      <input type="email" name="email" id="email" />
     </label>
   </p>
   <label class="honey">
