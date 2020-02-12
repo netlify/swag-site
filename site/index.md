@@ -5,9 +5,7 @@ layout: layouts/base.njk
 
 # A new Netlify swag store is coming!
 
-A brand new swag store for Netlify is in the works.
-
-We might be a little biased, but — in our humble opinion — it’s probably going to be the greatest swag store ever created.
+A brand new swag store for Netlify is in the works and we couldn’t be more excited about it. We’ve got some new gear on the way that will have you lookin’ Netli-_fly_. 😎
 
 ## Want to get notified when the new store goes live?
 
