@@ -52,7 +52,7 @@ export const query = graphql`
 `;
 
 export default ({ data }) => {
-  const [secret, setSecret] = useState();
+  const [isAllowed, setIsAllowed] = useState();
 
   const { title, body } = data.shopifyPage;
   return (
@@ -63,13 +63,13 @@ export default ({ data }) => {
           description: 'Swag that’s only available to Netlify team members.',
         }}
       />
-      {secret ? (
+      {isAllowed ? (
         <>
           <HomeIntro title={title} body={body} />
           <CollectionListings collection={data.shopifyCollection} />
         </>
       ) : (
-        <PasswordLock handleCorrectPassword={() => setSecret(true)} />
+        <PasswordLock handleCorrectPassword={() => setIsAllowed(true)} />
       )}
     </Layout>
   );
