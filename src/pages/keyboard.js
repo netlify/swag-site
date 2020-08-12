@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/layout';
+import { HomeIntro } from '../components/home-intro';
 import { CollectionListings } from '../components/collection-listings';
 import { PasswordLock } from '../components/password-lock';
 import SEO from '../components/seo';
@@ -43,17 +44,30 @@ export const query = graphql`
         }
       }
     }
+    shopifyPage(handle: { eq: "netlify-exclusive-swag" }) {
+      body
+      title
+    }
   }
 `;
 
 export default ({ data }) => {
   const [secret, setSecret] = useState();
 
+  const { title, body } = data.shopifyPage;
   return (
     <Layout home>
-      <SEO />
+      <SEO
+        metadata={{
+          title,
+          description: 'Swag that’s only available to Netlify team members.',
+        }}
+      />
       {secret ? (
-        <CollectionListings collection={data.shopifyCollection} />
+        <>
+          <HomeIntro title={title} body={body} />
+          <CollectionListings collection={data.shopifyCollection} />
+        </>
       ) : (
         <PasswordLock handleCorrectPassword={() => setSecret(true)} />
       )}
