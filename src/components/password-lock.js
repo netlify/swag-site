@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from '../styles/password-lock.module.css';
 
 export function PasswordLock({ handleCorrectPassword }) {
-  const [password, setPassword] = useState();
+  const [password, setPassword] = useState('');
 
   return (
     <form

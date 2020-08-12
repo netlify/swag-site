@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import { HomeIntro } from '../components/home-intro';
 import { CollectionListings } from '../components/collection-listings';
 import { PasswordLock } from '../components/password-lock';
 import SEO from '../components/seo';
+import { useAccess } from '../context/access-context';
 
 export const query = graphql`
   {
@@ -52,9 +53,9 @@ export const query = graphql`
 `;
 
 export default ({ data }) => {
-  const [isAllowed, setIsAllowed] = useState();
-
+  const { access, updateAccess } = useAccess();
   const { title, body } = data.shopifyPage;
+
   return (
     <Layout home>
       <SEO
@@ -63,13 +64,13 @@ export default ({ data }) => {
           description: 'Swag that’s only available to Netlify team members.',
         }}
       />
-      {isAllowed ? (
+      {access ? (
         <>
           <HomeIntro title={title} body={body} />
           <CollectionListings collection={data.shopifyCollection} />
         </>
       ) : (
-        <PasswordLock handleCorrectPassword={() => setIsAllowed(true)} />
+        <PasswordLock handleCorrectPassword={() => updateAccess(true)} />
       )}
     </Layout>
   );
