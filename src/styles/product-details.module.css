@@ -44,7 +44,7 @@
 }
 
 .form > * {
-  margin: var(--gutter)
+  margin: var(--gutter);
 }
 
 .form-row {
@@ -81,6 +81,14 @@
   font-size: 1rem;
   padding: 0.5rem;
   width: 6em;
+}
+
+.email {
+  border: 2px solid var(--color-gray-5);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 20em;
 }
 
 .button {
@@ -180,4 +188,13 @@
 .metafields dd {
   margin-left: 1.1em;
   margin-bottom: 0.5em;
+}
+
+.stockHeading {
+  width: 100%;
+}
+
+.stockSubmit {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
