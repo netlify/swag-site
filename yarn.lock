@@ -1428,10 +1428,10 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@netlify/marketing-community-nav@^1.0.9":
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/@netlify/marketing-community-nav/-/marketing-community-nav-1.0.9.tgz#42d43f90e76ef7b33f0cb38942e7b0f21e21d162"
-  integrity sha512-k+jd9XSAhTcv26KIR9XpcPSDwkxpWyigqOhuxzyWKZhzb2y627lzdMEMZ/vD8eGiVNXl4gnOWaWGdY4U4o0Sjw==
+"@netlify/marketing-community-nav@^1.0.10":
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@netlify/marketing-community-nav/-/marketing-community-nav-1.0.10.tgz#90d325d9843756618eb77abffd3b7e7976179218"
+  integrity sha512-SFOfC9tQN2VP2jpZ4k9yQYZC3bf+63Oc1NwbhFjw+XGMIOJ3vfkNhLYxV2bX5br8uppfG7Evb6q4DoFCsRLUxw==
 
 "@nodelib/fs.scandir@2.1.3":
   version "2.1.3"
@@ -13623,9 +13623,9 @@ xtend@^4.0.0, xtend@^4.0.1, xtend@~4.0.1:
   integrity sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==
 
 y18n@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.npmjs.org/y18n/-/y18n-4.0.0.tgz"
-  integrity sha512-r9S/ZyXu/Xu9q1tYlpsLIsa3EeLXXk0VwlxqTcFRfg9EhMW+17kbt9G0NrgCmhGb5vT2hyhJZLfDGx+7+5Uj/w==
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/y18n/-/y18n-4.0.3.tgz#b5f259c82cd6e336921efd7bfd8bf560de9eeedf"
+  integrity sha512-JKhqTOwSrqNA1NY5lSztJ1GrBiUodLMmIZuLiDaMRJ+itFd+ABVE8XBjOvIWL+rSqNDC74LCSFmlb/U4UZ4hJQ==
 
 yallist@^2.0.0, yallist@^2.1.2:
   version "2.1.2"
